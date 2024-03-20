@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+</head>
+
+<body>
+    <header>
+        <img class="logoAlura" src="./img/Frame 6.png" alt="Logo da alura">
+    </header>
+    <main class="container">
+        <section class="container__decodificador">
+            <textarea id="DecodificarTexto" class="container__decodificador__input" cols="50" rows="10"
+                placeholder="Digite seu texto aqui"></textarea>
+            <div class="container__decodificador__regra">
+                <img src="./img/bi_exclamation-circle-fill.png" alt="Simbolo de exclamação">
+                <p class="container__decodificador__regra__texto">Apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="container__decodificador__botoes">
+                <button class="botao__cript" onclick="criptografar()">Criptografar</button>
+                <button class="botao__descript" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <aside class="container__areaCopia">
+            <!-- <textarea class="mensagem" name="mensagem" id="" cols="20" rows="10"></textarea> -->
+            <div class="container__areaCopia__conteudo">
+                <div id="areaCopia">
+                    <img src="./img/figura.svg" alt="Imagem de uma moça com uma lupa">
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <p id="textoDescriptogafado"></p>
+                <button class="btn-copiar botao__descript" onclick="copiar()">Copiar</button>
+            </div>
+            
+        </aside>
+    </main>
+    <footer>
+        <p>Desenvolvido por Christian-Rui</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
